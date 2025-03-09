@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Markdone",
-    "slug": "Markdone",
+    "name": "markdone",
+    "slug": "markdone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -36,6 +36,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f58ae41b-29bc-48d8-bfaf-6395866806e0"
+      }
     }
   }
 }
