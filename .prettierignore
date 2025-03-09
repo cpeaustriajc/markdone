@@ -1,8 +1,0 @@
-yarn.lock
-package-lock.json
-
-supabase/.temp
-supabse/.branches
-**/*.yaml
-**/*.yml
-src-tauri/target

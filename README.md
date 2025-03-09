@@ -1,54 +1,50 @@
-# Markdone - Get more things done with Markdone
+# Welcome to your Expo app 👋
 
-An open source markdown editor built with the latest open source technologies in
-Next.js and React
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-This used to be my own personal markdown editor for editing directly in my
-github repository that was used for my personal portfolio.
+## Get started
 
-In the early versions of this app, this was based on the tutorial of [devaslife]
-and the blog post by [0xsuk]. These two content produced by magnificent
-engineers bootstrapped this project.
+1. Install dependencies
 
-> **Warning** Markdone is still in it's early version, the features that are
-> required for it to be a full pledged markdown editor is not implemented yet.
-> Use with caution!
-
-## Tech Stack
-
-- [react]
-- [tauri]
-- [tailwindcss]
-- [vite]
-
-## Features
-
-- Simple Markdown Editor
-- Markdown Preview
-
-## Running Locally
-
-To run markdone locally, follow the steps below.
-
-1. Install dependencies using pnpm:
-
-   ```sh
-   pnpm install
+   ```bash
+   npm install
    ```
 
-2. Start the development server:
+2. Start the app
 
-   ```sh
-   pnpm run dev
+   ```bash
+    npx expo start
    ```
 
-[devaslife]: https://www.youtube.com/watch?v=gxBis8EgoAg
-[0xsuk]:
-  https://0xsuk.github.io/posts/2022-03-25-build-your-own-markdown-editor-with-react.js-and-codemirror-6/
-[nextjs]: https://nextjs.org
-[tailwindcss]: https://tailwindcss.com
-[markdone]: https://markdone.jaycedotbin.me
-[shadcn/ui]: https://ui.shadcn.com
-[tauri]: https://tauri.app
-[react]: https://react.dev
-[vite]: https://vitejs.dev/
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

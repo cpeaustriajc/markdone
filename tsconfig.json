@@ -1,18 +1,17 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": ".",
+    "strict": true,
     "paths": {
       "@/*": [
-        "src/*"
+        "./*"
       ]
-    },
-    "types": [
-      "@types/wicg-file-system-access"
-    ]
+    }
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
   ]
 }

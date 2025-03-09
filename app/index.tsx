@@ -1,40 +1,25 @@
-import { Stack } from 'expo-router';
-import React, { useState } from 'react';
-import Markdown from 'react-native-markdown-display';
-import { Button, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { MarkdownTextInput } from '@expensify/react-native-live-markdown';
+import { useState } from 'react';
 
-const pickerOpts: OpenFilePickerOptions = {
-  types: [
-    {
-      description: 'Markdown File',
-      accept: { 'text/markdown': ['.md'] },
-    },
-  ],
-  excludeAcceptAllOption: true,
-  multiple: false,
-};
+export default function Index() {
+    const [text, setText] = useState('Hello, WOrld!');
 
-export default function Home() {
-  let [content, setContent] = useState<string>(undefined);
-  const onOpenFile = async () => {
-    const [fileHandle] = await window.showOpenFilePicker(pickerOpts);
-    const file = await fileHandle.getFile();
-    const fileReader = new FileReader();
-    fileReader.readAsText(file);
-    fileReader.onload = () => {
-      setContent(fileReader.result as string);
-    };
-  };
-  return (
-    <React.Fragment>
-      <Stack.Screen options={{ title: 'Home' }} />
-      {!content && (
-        <View>
-          <Text>Open a file to Get Started</Text>
-          <Button title="Open File" onPress={onOpenFile} />
+    return (
+        <View
+            style={{
+                flex: 1,
+            }}
+        >
+            <MarkdownTextInput
+                multiline
+                value={text}
+                onChangeText={setText}
+                style={{
+                    borderWidth: 0,
+                }}
+                placeholder="Start writing here..."
+            />
         </View>
-      )}
-      {content && <Markdown>{content}</Markdown>}
-    </React.Fragment>
-  );
+    );
 }
