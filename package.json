@@ -1,7 +1,7 @@
 {
-    "name": "markdone",
-    "main": "expo-router/entry",
-    "version": "0.0.1-alpha.0",
+  "name": "markdone",
+  "main": "expo-router/entry",
+  "version": "0.0.1-alpha.0",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -40,7 +40,8 @@
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "@expensify/react-native-live-markdown": "0.1.141"
+    "@expensify/react-native-live-markdown": "0.1.141",
+    "expo-dev-client": "~5.0.12"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
