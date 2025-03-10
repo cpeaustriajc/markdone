@@ -1,23 +1,28 @@
 import { View } from 'react-native';
+import Head from 'expo-router/head';
 import { MarkdownTextInput } from '@expensify/react-native-live-markdown';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 export default function Index() {
     const [text, setText] = useState<string>('');
 
     return (
-        <View style={{ flex: 1 }}>
-            <MarkdownTextInput
-                multiline
-                value={text}
-                onChangeText={setText}
-                style={{
-                    flex: 1,
-                    padding: 8,
-                    borderWidth: 0,
-                }}
-                placeholder="Start writing here..."
-            />
-        </View>
+        <Fragment>
+            <Head>
+                <title>Markdone</title>
+            </Head>
+            <View style={{ flex: 1 }}>
+                <MarkdownTextInput
+                    multiline
+                    value={text}
+                    onChangeText={setText}
+                    style={{
+                        padding: 8,
+                        borderWidth: 0,
+                    }}
+                    placeholder="Start writing here..."
+                />
+            </View>
+        </Fragment>
     );
 }
