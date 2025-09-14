@@ -1,6 +1,5 @@
-import { View } from 'react-native';
+import { View, TextInput } from 'react-native';
 import Head from 'expo-router/head';
-import { MarkdownTextInput } from '@expensify/react-native-live-markdown';
 import { Fragment, useState } from 'react';
 
 export default function Index() {
@@ -12,15 +11,9 @@ export default function Index() {
                 <title>Markdone</title>
             </Head>
             <View style={{ flex: 1 }}>
-                <MarkdownTextInput
-                    multiline
-                    value={text}
+                <TextInput
                     onChangeText={setText}
-                    style={{
-                        padding: 8,
-                        borderWidth: 0,
-                    }}
-                    placeholder="Start writing here..."
+                    value={text}
                 />
             </View>
         </Fragment>
